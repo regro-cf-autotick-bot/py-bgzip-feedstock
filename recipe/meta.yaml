@@ -1,5 +1,5 @@
 {% set name = "bgzip" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/bgzip-{{ version }}.tar.gz
-  sha256: 26ea6eed35ac43ea36cff828ca0f94925298ac21283cd0debaf072a92ac4be74
+  sha256: 9f80cf018befe8f8f201fb571cf42f74e8d72f5bfdf897f4b451286d8abc955f
 
 build:
-  number: 1
+  number: 0
   script:
     - export BUILD_WITH_CYTHON=1  # [not win]
     - set BUILD_WITH_CYTHON=1  # [win]
